@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-column Web Layout with Header and Footer</title>
+    <style>
+        body>section{
+            height: 100vh;
+            position: relative;
+
+        }
+        body>section:nth-child(1){
+            background-color: white;
+        }
+        body>section:nth-child(2){
+            background-color: dodgerblue;
+        }
+        body>section:nth-child(3){
+            background-color: darkgray;
+        }
+        body>section:nth-child(4){
+            background-color: coral;
+        }
+
+        section>div{
+            height: 50px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding: .20rem;
+            display: flex;
+            flex-direction: column;
+
+        }
+        section>p{
+            margin-top: 220px;
+            margin-bottom: 220px;
+            color: black;
+            font-weight: bolder;
+            font-family: Arial;
+            text-align: center;
+            font-size: 100px;
+
+        }
+        .color1{
+            background-color: #ff4242;
+        }
+        .color2{
+            background-color: darkblue;
+        }
+        .color3{
+            background-color: black;
+        }
+        .color4{
+            background-color: brown;
+        }
+        section>div>h1{
+            color: white;
+            font-weight: bolder;
+            font-family: Arial;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            margin-left: 5px;
+            font-size: 25px;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="color1">
+        <h1>Card 1</h1>
+    </div>
+    <p>Hello</p>
+</section>
+<section>
+    <div class="color2">
+        <h1>Card 2</h1>
+    </div>
+    <p>How</p>
+</section>
+<section>
+    <div class="color3">
+        <h1>Card 3</h1>
+    </div>
+    <p>Are</p>
+</section>
+<section>
+    <div class="color4">
+        <h1>Card 4</h1>
+    </div>
+    <p>You..?</p>
+</section>
+
+</body>
+</html>
